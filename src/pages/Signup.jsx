@@ -1,13 +1,13 @@
 import React from 'react'
 import './SignUp.css'
 
-function SignUp() {
+function Signup() {
     let [email, setEmail] = React.useState("")
     let [password, setPassword] = React.useState("")
 
     function submitForm(e) {
         e.preventDefault()
-        alert(`Email: ${email}, Password: ${password}`)
+        
     }
 
     return (
@@ -39,4 +39,4 @@ function SignUp() {
     )
 }
 
-export default SignUp
+export default Signup

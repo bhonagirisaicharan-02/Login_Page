@@ -1,7 +1,9 @@
 import React from 'react'
 import './Login.css'
+import {useNavigate} from 'react-router-dom'
 
 function Login() {
+    let navigate = useNavigate()
   let [email, setEmail] = React.useState("")
   let [password, setPassword] = React.useState("")
 
@@ -13,7 +15,10 @@ function Login() {
 
   function submitForm(e) {
         e.preventDefault()
-        alert(`Name: ${email}, Password: ${password}`)
+        if(true){
+            navigate('/')
+        }
+        
     }
   return (
     <div>
